@@ -55,13 +55,13 @@ please fork it and add some ideas :)
 #### The code
 	from types import *
 	def inject(class_holder, **dependencies):
-	    if isinstance(class_holder, ClassType):
-		istance = class_holder()
-	    else:
-		istance=class_holder
-	    for dependency in dependencies:
-		if isinstance(dependencies[dependency], ClassType):
-		    dependencies[dependency]=dependencies[dependency]()
-		setattr(istance, dependency, dependencies[dependency])
-	    return istance
+            if isinstance(class_holder, ClassType):
+                istance = class_holder()
+            else:
+                istance=class_holder
+            for dependency in dependencies:
+                if isinstance(dependencies[dependency], ClassType):
+                    dependencies[dependency]=dependencies[dependency]()
+                setattr(istance, dependency, dependencies[dependency])
+            return istance
 
