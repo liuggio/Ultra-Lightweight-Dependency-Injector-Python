@@ -9,15 +9,20 @@ it's a design pattern for maintain high level on the software quality
 
 #### ** and is not a Service Locator.**
 
-is useful for small and medium-sized projects, when you want to maintain decency in your code without using invasive frameworks
+is useful for small-sized projects, when you want to maintain decency in your code without using invasive frameworks
 
 is useful if you want to test the code, to give a mock object dependencies
 
-is useful to understand how work a simple dependency injector
+is useful to understand how work a stupid dependency injector
 
 is useful to reuse the code
 
-is NOT useful if you have a lot of requests injected object, since each request to reallocate use a Service Locator
+is NOT useful if you have a lot of injected object, is better use a Service Locator and a PROPER DIC framework.
+
+#### ++ todo
+
+injection without instantiation, using __metaclass__ ??
+ 
 
  
 
